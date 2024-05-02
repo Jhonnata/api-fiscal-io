@@ -1,0 +1,153 @@
+CRITICAL - 2024-02-26 15:41:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "swagger.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('swagger.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('swagger', [], true)
+ 3 APPPATH\Controllers\ApiController.php(101): view('swagger')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:42:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "swagger.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('swagger.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('swagger', [], true)
+ 3 APPPATH\Controllers\ApiController.php(101): view('swagger')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:42:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "swagger.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('swagger.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('swagger', [], true)
+ 3 APPPATH\Controllers\ApiController.php(101): view('swagger')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:42:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "swagger.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('swagger.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('swagger', [], true)
+ 3 APPPATH\Controllers\ApiController.php(101): view('swagger')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:42:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "swagger.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('swagger.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('swagger', [], true)
+ 3 APPPATH\Controllers\ApiController.php(101): view('swagger')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:47:28 --> Error: Class "App\Libraries\Cryptonip" not found
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(913): API\Authentication\Controllers\Authentication->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:47:45 --> Error: Class "App\Libraries\Cryptonip" not found
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(913): API\Authentication\Controllers\Authentication->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:53:30 --> Error: Class "App\Models\ApiModel" not found
+in ROOTPATH\api-v1\Subscriber\Models\SubscriberModel.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\api-v1\\Subscriber\\Models\\SubscriberModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('API\\Subscriber\\Models\\SubscriberModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('API\\Subscriber\\Models\\SubscriberModel')
+ 5 SYSTEMPATH\RESTful\BaseResource.php(67): class_exists('API\\Subscriber\\Models\\SubscriberModel')
+ 6 SYSTEMPATH\RESTful\BaseResource.php(49): CodeIgniter\RESTful\BaseResource->setModel('API\\Subscriber\\Models\\SubscriberModel')
+ 7 APPPATH\Controllers\ApiController.php(59): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\ApiController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 16:19:24 --> Error: Call to undefined function API\Authentication\Controllers\uuid()
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 16:19:44 --> Error: Call to undefined function API\Authentication\Controllers\uuid()
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 16:20:07 --> Error: Class "API\Authentication\Controllers\TokenDecoded" not found
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 17:01:33 --> Error: Call to undefined function API\Authentication\Controllers\auth()
+in ROOTPATH\api-v1\Authentication\Controllers\Authentication.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 17:05:14 --> Error: Interface "LightShield\Authentication\JWT\Adapters\JWSAdapterInterface" not found
+in ROOTPATH\lightShield\Authentication\JWT\Adapters\FirebaseAdapter.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Authentication\\JWT\\Adapters\\FirebaseAdapter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Authentication\\JWT\\Adapters\\FirebaseAdapter')
+ 4 ROOTPATH\lightShield\Authentication\JWT\JWSEncoder.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Authentication\\JWT\\Adapters\\FirebaseAdapter')
+ 5 ROOTPATH\lightShield\Authentication\JWTManager.php(25): LightShield\Authentication\JWT\JWSEncoder->__construct(null, Object(CodeIgniter\I18n\Time))
+ 6 ROOTPATH\lightShield\Config\Services.php(35): LightShield\Authentication\JWTManager->__construct()
+ 7 SYSTEMPATH\Config\BaseService.php(258): LightShield\Config\Services::jwtmanager(false)
+ 8 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('jwtmanager', [...])
+ 9 ROOTPATH\lightShield\Config\Services.php(33): CodeIgniter\Config\BaseService::getSharedInstance('jwtmanager')
+10 SYSTEMPATH\Config\BaseService.php(258): LightShield\Config\Services::jwtmanager()
+11 SYSTEMPATH\Common.php(1008): CodeIgniter\Config\BaseService::__callStatic('jwtmanager', [])
+12 ROOTPATH\lightShield\Authentication\Authenticators\JWT.php(26): service('jwtmanager')
+13 ROOTPATH\lightShield\Authentication\Authentication.php(28): LightShield\Authentication\Authenticators\JWT->__construct()
+14 ROOTPATH\lightShield\Auth.php(43): LightShield\Authentication\Authentication->factory('jwt')
+15 ROOTPATH\api-v1\Authentication\Controllers\Authentication.php(58): LightShield\Auth->getAuthenticator()
+16 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 17:46:57 --> ArgumentCountError: Too few arguments to function LightShield\Auth::__construct(), 1 passed in C:\server\www\unip\platform-api\lightShield\Config\Services.php on line 22 and exactly 2 expected
+in ROOTPATH\lightShield\Auth.php on line 23.
+ 1 ROOTPATH\lightShield\Config\Services.php(22): LightShield\Auth->__construct(Object(LightShield\Config\Auth))
+ 2 SYSTEMPATH\Config\BaseService.php(258): LightShield\Config\Services::auth(false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('auth', [...])
+ 4 ROOTPATH\lightShield\Config\Services.php(18): CodeIgniter\Config\BaseService::getSharedInstance('auth')
+ 5 SYSTEMPATH\Config\BaseService.php(258): LightShield\Config\Services::auth()
+ 6 SYSTEMPATH\Common.php(1008): CodeIgniter\Config\BaseService::__callStatic('auth', [])
+ 7 APPPATH\Helpers\api_helper.php(10): service('auth')
+ 8 ROOTPATH\api-v1\Authentication\Controllers\Authentication.php(58): auth()
+ 9 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 17:47:09 --> ErrorException: Declaration of LightShield\Authentication\Authenticators\JWT::getUser(): ?CodeIgniter\Entity\Entity must be compatible with LightShield\Authentication\AuthenticatorInterface::getUser(): ?LightShield\Entities\User
+in ROOTPATH\lightShield\Authentication\Authenticators\JWT.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-26 18:24:11 --> TypeError: LightShield\Authentication\JWTManager::generateToken(): Argument #1 ($user) must be of type CodeIgniter\Entity\Entity, array given, called in C:\server\www\unip\platform-api\api-v1\Authentication\Controllers\Authentication.php on line 78
+in ROOTPATH\lightShield\Authentication\JWTManager.php on line 38.
+ 1 ROOTPATH\api-v1\Authentication\Controllers\Authentication.php(78): LightShield\Authentication\JWTManager->generateToken([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): API\Authentication\Controllers\Authentication->site()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Authentication\Controllers\Authentication))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 19:25:26 --> ErrorException: Undefined property: CodeIgniter\HTTP\IncomingRequest::$payload
+in APPPATH\Controllers\ApiController.php on line 86.
+ 1 APPPATH\Controllers\ApiController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$payload', 'C:\\server\\www\\unip\\platform-api\\app\\Controllers\\ApiController.php', 86)
+ 2 ROOTPATH\api-v1\Subscriber\Controllers\Subscriber.php(134): App\Controllers\ApiController->log(Object(Exception))
+ 3 SYSTEMPATH\CodeIgniter.php(941): API\Subscriber\Controllers\Subscriber->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(API\Subscriber\Controllers\Subscriber))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 21:02:13 --> ErrorException: Declaration of App\Filters\AuthFilter::before(CodeIgniter\HTTP\RequestInterface $request, ?array $arguments = null) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = null)
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-26 21:02:25 --> ErrorException: Declaration of App\Filters\AuthFilter::before(CodeIgniter\HTTP\RequestInterface $request, ?array $arguments = null) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = null)
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

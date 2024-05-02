@@ -1,0 +1,309 @@
+CRITICAL - 2024-02-29 14:50:31 --> ErrorException: Skipping unknown CodeIgniter\Queue\Database\Migrations\AddQueueTables
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'Skipping unknown CodeIgniter\\Queue\\Database\\Migrations\\AddQueueTables', 'C:\\server\\www\\unip\\platform-api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 31)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(31): trigger_error('Skipping unknown CodeIgniter\\Queue\\Database\\Migrations\\AddQueueTables', 512)
+ 3 VENDORPATH\psr\log\Psr\Log\AbstractLogger.php(85): OpenApi\Loggers\DefaultLogger->log('warning', 'Skipping unknown CodeIgniter\\Queue\\Database\\Migrations\\AddQueueTables', [])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(88): Psr\Log\AbstractLogger->warning('Skipping unknown CodeIgniter\\Queue\\Database\\Migrations\\AddQueueTables')
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(62): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('CodeIgniter\\Queue\\Database\\Migrations\\AddQueueTables', Object(OpenApi\Analysis), [...])
+ 6 VENDORPATH\zircote\swagger-php\src\Generator.php(493): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\server\\www\\unip\\platform-api\\app\\ThirdParty\\queue\\src\\Database\\Migrations\\2023-10-12-112040_AddQueueTables.php', Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Generator.php(490): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(455): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(407): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+10 APPPATH\Commands\Swagger\Swagger.php(37): OpenApi\Generator::scan([...])
+11 SYSTEMPATH\CLI\Commands.php(65): App\Commands\Swagger\Swagger->run([])
+12 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('swagger:generate', [])
+13 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-29 14:51:32 --> ErrorException: Multiple @OA\Property() with the same property="name":
+  \API\Applicant\Entities\Applicant->addressNumber in C:\server\www\unip\platform-api\api-v1\Applicant\Entities\Applicant.php on line 11
+  \API\Applicant\Entities\Applicant->name in C:\server\www\unip\platform-api\api-v1\Applicant\Entities\Applicant.php on line 11
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'Multiple @OA\\Property() with the same property="name":
+  \\API\\Applicant\\Entities\\Applicant->addressNumber in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11
+  \\API\\Applicant\\Entities\\Applicant->name in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11', 'C:\\server\\www\\unip\\platform-api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 31)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(31): trigger_error('Multiple @OA\\Property() with the same property="name":
+  \\API\\Applicant\\Entities\\Applicant->addressNumber in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11
+  \\API\\Applicant\\Entities\\Applicant->name in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11', 512)
+ 3 VENDORPATH\psr\log\Psr\Log\AbstractLogger.php(69): OpenApi\Loggers\DefaultLogger->log('error', 'Multiple @OA\\Property() with the same property="name":
+  \\API\\Applicant\\Entities\\Applicant->addressNumber in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11
+  \\API\\Applicant\\Entities\\Applicant->name in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11', [])
+ 4 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(489): Psr\Log\AbstractLogger->error('Multiple @OA\\Property() with the same property="name":
+  \\API\\Applicant\\Entities\\Applicant->addressNumber in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11
+  \\API\\Applicant\\Entities\\Applicant->name in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Entities\\Applicant.php on line 11')
+ 5 VENDORPATH\zircote\swagger-php\src\Annotations\Schema.php(493): OpenApi\Annotations\AbstractAnnotation->validate([...], [...], '#/components/schemas/0', Object(stdClass))
+ 6 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(576): OpenApi\Annotations\Schema->validate([...], [...], '#/components/schemas/0', Object(stdClass))
+ 7 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(582): OpenApi\Annotations\AbstractAnnotation::_validate([...], [...], [...], '#/components/schemas', Object(stdClass))
+ 8 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(549): OpenApi\Annotations\AbstractAnnotation::_validate(Object(OpenApi\Annotations\Components), [...], [...], '#/components', Object(stdClass))
+ 9 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(576): OpenApi\Annotations\AbstractAnnotation->validate([...], [...], '#/components', Object(stdClass))
+10 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(549): OpenApi\Annotations\AbstractAnnotation::_validate(Object(OpenApi\Annotations\OpenApi), [...], [...], '#', Object(stdClass))
+11 VENDORPATH\zircote\swagger-php\src\Annotations\OpenApi.php(169): OpenApi\Annotations\AbstractAnnotation->validate([...], [], '#', Object(stdClass))
+12 VENDORPATH\zircote\swagger-php\src\Analysis.php(426): OpenApi\Annotations\OpenApi->validate()
+13 VENDORPATH\zircote\swagger-php\src\Generator.php(467): OpenApi\Analysis->validate()
+14 VENDORPATH\zircote\swagger-php\src\Generator.php(407): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+15 APPPATH\Commands\Swagger\Swagger.php(37): OpenApi\Generator::scan([...])
+16 SYSTEMPATH\CLI\Commands.php(65): App\Commands\Swagger\Swagger->run([])
+17 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('swagger:generate', [])
+18 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+WARNING - 2024-02-29 14:57:08 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 14:57:11 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 14:59:14 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 14:59:15 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 14:59:16 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:00:56 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:01:44 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:02:05 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:02:28 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:02:34 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:03:44 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:03:45 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:03:48 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-29 15:03:49 --> [DEPRECATED] parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in ROOTPATH\lightShield\Libraries\Authorization.php on line 41.
+ 1 ROOTPATH\lightShield\Libraries\Authorization.php(41): parse_url(null, 1)
+ 2 ROOTPATH\lightShield\Filters\AbstractAuthFilter.php(23): LightShield\Libraries\Authorization->__construct(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): LightShield\Filters\AbstractAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:07:34 --> ErrorException: [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got '@' in \API\Applicant\Controllers\Applicant->update() in C:\server\www\unip\platform-api\api-v1\Applicant\Controllers\Applicant.php on line 174:12
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->update() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 174:12', 'C:\\server\\www\\unip\\platform-api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 31)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(31): trigger_error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->update() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 174:12', 512)
+ 3 VENDORPATH\psr\log\Psr\Log\AbstractLogger.php(69): OpenApi\Loggers\DefaultLogger->log('error', '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->update() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 174:12', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(80): Psr\Log\AbstractLogger->error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->update() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 174:12', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Put  (
+     *     tags={"Applicant"},
+     *     summary="Update a Applicant",
+     *     description="Update a Applicant",
+     *     path="/applicants/{id}",
+     *     @OA\\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="Applicant id",
+     *         required=true,
+     *         @OA\\Schema(type="integer"),
+     *     ),
+     *     security={{"bearerAuth":{}}},
+     *     @OA\\MediaType(
+     *         mediaType="application/json",
+     *         @OA\\Schema(ref="#/components/schemas/Applicant"),
+     *     )
+     *     @OA\\Response(response="200", description="OK"),
+     *     @OA\\Response(response="422", description="Missing Data"),
+     *     @OA\\Response(response="401", description="Unauthorized"),
+     * )
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(138): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(62): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('API\\Applicant\\Controllers\\Applicant', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(493): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(490): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(455): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(407): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Commands\Swagger\Swagger.php(37): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CLI\Commands.php(65): App\Commands\Swagger\Swagger->run([])
+14 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('swagger:generate', [])
+15 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-29 15:12:18 --> ErrorException: [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got '@' in \API\Applicant\Controllers\Applicant->create() in C:\server\www\unip\platform-api\api-v1\Applicant\Controllers\Applicant.php on line 95:12
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->create() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 95:12', 'C:\\server\\www\\unip\\platform-api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 31)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(31): trigger_error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->create() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 95:12', 512)
+ 3 VENDORPATH\psr\log\Psr\Log\AbstractLogger.php(69): OpenApi\Loggers\DefaultLogger->log('error', '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->create() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 95:12', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(80): Psr\Log\AbstractLogger->error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'@\' in \\API\\Applicant\\Controllers\\Applicant->create() in C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php on line 95:12', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post (
+     *     tags={"Applicant"},
+     *     summary="Create a new Applicant",
+     *     description="Create a new Applicant",
+     *     path="/applicants",
+     *     security={{"bearerAuth":{}}},
+     *     @OA\\JsonContent(ref="#/components/schemas/Applicant")
+     *     @OA\\Response(response="200", description="OK"),
+     *     @OA\\Response(response="422", description="Missing Data"),
+     *     @OA\\Response(response="401", description="Unauthorized"),
+     * )
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(138): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(62): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('API\\Applicant\\Controllers\\Applicant', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(493): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\server\\www\\unip\\platform-api\\api-v1\\Applicant\\Controllers\\Applicant.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(490): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(455): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(407): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Commands\Swagger\Swagger.php(37): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CLI\Commands.php(65): App\Commands\Swagger\Swagger->run([])
+14 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('swagger:generate', [])
+15 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+INFO - 2024-02-29 15:24:49 --> REDIRECTED ROUTE at http://api.platform.io/%5CApp%5CControllers%5CApiController::index
+INFO - 2024-02-29 15:25:17 --> REDIRECTED ROUTE at http://api.platform.io/doc
+INFO - 2024-02-29 15:25:28 --> REDIRECTED ROUTE at http://api.platform.io/doc
+INFO - 2024-02-29 15:26:31 --> REDIRECTED ROUTE at http://api.platform.io/doc
+INFO - 2024-02-29 15:26:31 --> REDIRECTED ROUTE at http://api.platform.io/doc
+CRITICAL - 2024-02-29 15:32:20 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:32:21 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:32:22 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:32:23 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:32:24 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:32:42 --> ParseError: Unclosed '[' does not match ')'
+in ROOTPATH\lightShield\Filters\CorsFilter.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\server\\www\\unip\\platform-api\\lightShield\\Filters\\CorsFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('LightShield\\Filters\\CorsFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(175): CodeIgniter\Autoloader\Autoloader->loadClass('LightShield\\Filters\\CorsFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('doc', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-29 15:37:52 --> REDIRECTED ROUTE at http://api.platform.io/doc
+CRITICAL - 2024-02-29 15:51:52 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('authenticate/site', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:52:27 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('authenticate/site', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:53:19 --> TypeError: Cannot assign null to property lightShield\Controllers\Authenticate::$config of type CodeIgniter\Config\BaseConfig
+in ROOTPATH\lightShield\Controllers\Authenticate.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(913): lightShield\Controllers\Authenticate->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:53:30 --> TypeError: Cannot assign null to property lightShield\Controllers\Authenticate::$config of type CodeIgniter\Config\BaseConfig
+in ROOTPATH\lightShield\Controllers\Authenticate.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(913): lightShield\Controllers\Authenticate->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:54:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('authenticate/site', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 15:56:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('authenticate/site', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
