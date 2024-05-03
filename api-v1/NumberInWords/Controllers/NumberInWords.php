@@ -45,7 +45,9 @@ class NumberInWords extends ApiController
                 throw  new Exception(lang('Messages.notNumber'));
             }
             $numberInWord = new NumberInWordsService();
-            return $this->respond($numberInWord->translate($number));
+            return $this->respond([
+                "text"=>$numberInWord->translate($number)
+            ]);
         } catch (\Throwable $exception) {
             return $this->fail($exception->getMessage());
         }

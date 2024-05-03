@@ -12,6 +12,7 @@
 // Core language settings
 return [
     'emptyId' => 'Informe o código!',
+    'notMinusNumber' => 'Apenas números inteiros são permitidos.',
     'notNumber' => 'Você deve informar um número inteiro.',
     'notFound' => 'Dados não localizados!',
     'notCreated' => 'Não foi possível salvar os dados!',

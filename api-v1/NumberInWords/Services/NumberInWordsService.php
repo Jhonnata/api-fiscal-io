@@ -1,6 +1,8 @@
 <?php
 
 namespace API\NumberInWords\Services;
+use Exception;
+
 class NumberInWordsService
 {
 
@@ -71,14 +73,17 @@ class NumberInWordsService
         if ($number === 0) {
             return "zero";
         }
-        return $this->numberInWord($number);
+        if ($number < 0) {
+            throw  new Exception(lang('Messages.notMinusNumber'));
+        }
+        return trim($this->numberInWord($number));
     }
 
     /**
      * @param $number
      * @return string
      */
-    private function numberInWord($number):string
+    private function numberInWord($number): string
     {
         $explode = explode('.', str_replace(',', '.', $number));
         $integer = $explode[0];
@@ -86,10 +91,10 @@ class NumberInWordsService
         $text = "";
 
         if ($integer > 0) {
-            $text .= $this->numberInteger($integer);
+            $text .= trim($this->numberInteger($integer));
         }
-        if(!empty($decimal)){
-            $text.="vírgula {$this->numberDecimal($decimal)}";
+        if (!empty($decimal)) {
+            $text .= " vírgula {$this->numberDecimal($decimal)}";
         }
         return $text;
     }
@@ -108,14 +113,14 @@ class NumberInWordsService
             $tens = $group % 100;
             $unit = $group % 10;
             if ($hundreds > 0) {
-                $group_text .= $this->hundreds[$hundreds]." e ";
+                $group_text .= $this->hundreds[$hundreds] . " e ";
             }
             if ($tens > 0) {
                 $group_text = $this->groupText($tens, $group_text, $unit);
             }
 
             if ($group > 0) {
-                $group_text .= $this->thousands[$key] . " ";
+                $group_text .=  " {$this->thousands[$key]} ";
             }
             $text = $group_text . $text;
         }
@@ -133,7 +138,7 @@ class NumberInWordsService
         $unit = $number % 10;
         if ($tens > 0) {
             $group_text = $this->groupText($tens, $group_text, $unit);
-        }elseif ($unit >0){
+        } elseif ($unit > 0) {
             $group_text .= "{$this->units[$unit] } ";
         }
         return $group_text;
@@ -148,13 +153,13 @@ class NumberInWordsService
     private function groupText(int $tens, string $group_text, int $unit): string
     {
         if ($tens < 10) {
-            $group_text .= "{$this->units[$tens] } ";
+            $group_text .= "{$this->units[$tens]}";
         } elseif ($tens < 20) {
             $group_text .= $this->specials[$tens - 10] . " ";
         } else {
             $group_text .= $this->tens[floor($tens / 10)] . " ";
             if ($unit > 0) {
-                $group_text .= "e {$this->units[$unit]} ";
+                $group_text .= "e {$this->units[$unit]}";
             }
         }
         return $group_text;
