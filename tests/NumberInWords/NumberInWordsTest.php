@@ -10,7 +10,6 @@ final class NumberInWordsTest extends CIUnitTestCase
 {
     use FeatureTestTrait;
 
-
     /**
      * @throws RedirectException
      */
@@ -29,6 +28,12 @@ final class NumberInWordsTest extends CIUnitTestCase
         $request = $this->get('/number-in-words', ['number'=>'9.6']);
         $this->assertTrue($request->getJSON() !== false);
         $request->assertJSONFragment(['text' => 'nove vírgula seis']);
+    }
+
+    public function testShouldNotANegativeNumber(){
+        $request = $this->get('/number-in-words', ['number'=>'-9.6']);
+        $request->assertStatus(400);
+        $this->assertTrue($request->getJSON() !== false);
     }
 
 }
