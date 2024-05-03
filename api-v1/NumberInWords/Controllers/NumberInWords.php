@@ -14,14 +14,21 @@ class NumberInWords extends ApiController
      *     tags={"NumberInWords"},
      *     summary="Get a NumberInWords.",
      *     description="Write the number in full, for example: One, two..",
-     *     path="/number-in-words/{number}",
+     *     path="/number-in-words",
      *     security={{"bearerAuth":{}}},
      *     @OA\Parameter(
      *         name="number",
      *         in="path",
      *         description="Number for get name",
-     *         required=true,
+     *         required=false,
      *         @OA\Schema(type="integer")
+     *     ),
+     *   @OA\Parameter(
+     *         name="number",
+     *         in="query",
+     *         description="Number for get name",
+     *         required=false,
+     *         @OA\Schema(type="decimal")
      *     ),
      *     @OA\Response(response="200", description="OK"),
      *     @OA\Response(response="422", description="Missing Data"),
@@ -31,6 +38,9 @@ class NumberInWords extends ApiController
     public function index($number = null)
     {
         try {
+            if (empty($number)) {
+                $number = $this->request->getGet('number');
+            }
             if (!is_numeric($number)) {
                 throw  new Exception(lang('Messages.notNumber'));
             }

@@ -20,22 +20,31 @@
         }
     ],
     "paths": {
-        "/number-in-words/{number}": {
+        "/number-in-words": {
             "get": {
                 "tags": [
                     "NumberInWords"
                 ],
                 "summary": "Get a NumberInWords.",
                 "description": "Write the number in full, for example: One, two..",
-                "operationId": "3517960bf4dc8399c1fb4a4f11d554d1",
+                "operationId": "84568cd81e711dac9a3db5e9767fbec5",
                 "parameters": [
                     {
                         "name": "number",
                         "in": "path",
                         "description": "Number for get name",
-                        "required": true,
+                        "required": false,
                         "schema": {
                             "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "number",
+                        "in": "query",
+                        "description": "Number for get name",
+                        "required": false,
+                        "schema": {
+                            "type": "decimal"
                         }
                     }
                 ],
