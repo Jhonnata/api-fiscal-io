@@ -25,6 +25,10 @@ final class NumberInWordsTest extends CIUnitTestCase
 
     }
 
-
+    public function testShouldADecimalPositiveNumber(){
+        $request = $this->get('/number-in-words', ['number'=>'9.6']);
+        $this->assertTrue($request->getJSON() !== false);
+        $request->assertJSONFragment(['text' => 'nove vírgula seis']);
+    }
 
 }
