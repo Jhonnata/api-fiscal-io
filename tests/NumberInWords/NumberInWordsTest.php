@@ -36,4 +36,10 @@ final class NumberInWordsTest extends CIUnitTestCase
         $this->assertTrue($request->getJSON() !== false);
     }
 
+    public function testShouldNotAString(){
+        $request = $this->get('/number-in-words', ['number'=>'noventa  e seis']);
+        $request->assertStatus(400);
+        $this->assertTrue($request->getJSON() !== false);
+    }
+
 }
